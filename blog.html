@@ -9,6 +9,17 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link rel="stylesheet" href="styles/debug.css">
     <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image {
+            width: 64px;
+        }
+
+
         .is-paddingless-horizontal {
             padding-left: 0;
             padding-right: 0;
@@ -35,7 +46,7 @@
     <!-- .section -->
     <section class="section is-paddingless-horizontal">
         <div class="container grid">
-            <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li class="is-active"><a href="#" aria-current="page">How to build a beautiful blog</a></li>
@@ -45,22 +56,31 @@
     </section>
     <!-- /.section -->
 
-    <section class="section is-paddingless-horizontal">
+    <section class="section is-paddingless-horizontal" style="padding-top: 0;">
         <div class="container grid">
 
 
-            <article class="media">
+            <article class="media center">
                 <figure class="media-left">
-                    <figure class="image is-64x64">
-                        <img src="https://bulma.io/images/placeholders/128x128.png">
+                    <figure class="image">
+                        <img class="is-rounded" src="images/etikett-rosa (3).jpg">
                     </figure>
                 </figure>
                 <div class="media-content">
                     <div class="content">
-                        <!-- ... -->
+                        <p>
+                            <strong>Adri Toll</strong> <a>@username_adritoll</a><br>
+                            <span class="has-text-grey">Self-taught, inspired to learn<br>
+                                <time datetime="2018-04-20">Apr 20</time> · 20 min read</span>
+                        </p>
                     </div>
                 </div>
             </article>
+
+            <div class="section is-paddingless-horizontal">
+                <h1 class="title is-2">How to build a beautiful blog</h1>
+                <h2 class="subtitle is-3">How to build a beautiful blog</h2>
+            </div>
 
         </div>
     </section>

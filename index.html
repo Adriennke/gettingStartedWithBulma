@@ -5,14 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <title>Hello Bulma</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>
-        My first website with bulma
-    </p>
+    <section class="hero is-fullheight has-background-black">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title center">
+                    Hello Bulma
+                </h1>
+                <!-- <figure class="image center">
+                    <img src="images/bulma-logo-white.png" style="max-width: 512px;">
+                </figure> -->
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
